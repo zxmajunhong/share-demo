@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>完成</title>
+  <link rel="stylesheet" type="" href="css/reset.css">
+  <link rel="stylesheet" type="" href="css/index.css">
+  <script type="text/javascript" src="http://img.juxiangyou.com/assets/20170725/js/lib/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="http://img.juxiangyou.com/assets/20170725/js/lib/slide.min.js"></script>
+</head>
+<body>
+  <div class="bg1">
+    <div class="main">
+      <div class="width-1180">
+        <!--大炮层-->
+        <div class="cannon-layer">
+          <div class="each-cannon up c1">
+            <!--底座-->
+            <div class="cannon-base"></div>
+            <!--炮管-->
+            <div class="cannon-barrel"></div>
+          </div>
+          <div class="each-cannon up c2">
+            <!--底座-->
+            <div class="cannon-base"></div>
+            <!--炮管-->
+            <div class="cannon-barrel"></div>
+          </div>
+          <div class="each-cannon down c3">
+            <!--底座-->
+            <div class="cannon-base"></div>
+            <!--炮管-->
+            <div class="cannon-barrel"></div>
+          </div>
+          <div class="each-cannon down c4">
+            <!--底座-->
+            <div class="cannon-base"></div>
+            <!--炮管-->
+            <div class="cannon-barrel"></div>
+          </div>
+        </div>
+        <!--鱼层-->
+        <div class="fish-layer">
+          <span class="static-fish fish1"></span>
+          <span class="static-fish fish2"></span>
+          <span class="static-fish fish3"></span>
+          <span class="static-fish fish4"></span>
+          <span class="static-fish fish5"></span>
+          <span class="static-fish fish6"></span>
+          <div class="dynamic-fish dfish1">
+            <span class="fish"></span>
+          </div>
+          <div class="dynamic-fish dfish2">
+            <span class="fish"></span>
+          </div>
+          <div class="dynamic-fish dfish3">
+            <span class="fish"></span>
+          </div>
+          <div class="dynamic-fish dfish4">
+            <span class="fish"></span>
+          </div>
+        </div>
+        <!--泡泡层-->
+        <div class="bubble-layer">
+          <i class="bubble1 small-bubble"></i>
+          <i class="bubble2 middle-bubble"></i>
+          <i class="bubble3 big-bubble"></i>
+          <i class="bubble4 small-bubble"></i>
+          <i class="bubble5 middle-bubble"></i>
+          <i class="bubble6 big-bubble"></i>
+          <i class="bubble7 small-bubble"></i>
+          <i class="bubble8 middle-bubble"></i>
+          <i class="bubble9 big-bubble"></i>
+        </div>
+        <!--奖品泡泡层-->
+        <div class="prize-layer">
+          <div class="prize p1"></div>
+          <div class="prize p2"></div>
+          <div class="prize p3"></div>
+        </div>
+        <!--遮挡前景层-->
+        <div class="cover-layer">
+          <div class="cover-bg1"></div>
+          <div class="cover-bg2"></div>
+          <div class="cover-bg3"></div>
+        </div>
+      </div>
+      <!--评论层-->
+      <div class="comment-layer">
+        <ul class="bd">
+          <li class="comment-list list1"></li>
+          <li class="comment-list list2"></li>
+          <li class="comment-list list3"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg2"></div>
+  <div class="bg3"></div>
+  <div class="bg4"></div>
+  <div class="bg5"></div>
+</body>
+<script type="text/javascript">
+    $(function () {
+      $('.comment-layer').slide({
+        mainCell: '.bd',
+        autoPlay: true,
+        effect: 'leftMarquee',
+        vid: 1,
+        interTime: 10,
+        mouseOverStop: false
+      })
+    });
+</script>
+</html>
